@@ -1,2 +1,20 @@
+<<<<<<< Updated upstream
 .global-header {
+=======
+:root {
+  --link-color: #fff;
+}
+
+.global-header {
+  background-color: black;
+}
+
+.global-header .main-navigation a,
+.global-header .main-navigation a:visited {
+  color: var(--link-color);
+}
+
+.global-header .main-navigation a.active {
+  color: #ff6c00;
+>>>>>>> Stashed changes
 }
