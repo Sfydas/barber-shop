@@ -1,16 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap");
+
 :root {
-  --link-color: #fff;
+  --link-color: #ffffff;
+  --text-active: #ff6c00;
+  --link-active-color: #ff6c00;
+  --text-font-family: "Open Sans", sans-serif;
+  --heading-font-family: "Raleway", sans-serif;
+  --text-color: #9da4bd;
+  --text-alternate-color: #303030;
+  --subheading-color: #9da4bd;
+  --heading-color: #ffffff;
+  --heading-alternate-color: #303030;
+}
+/*  */
+body {
+  font-family: var(--text-font-family);
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  font-family: var(--text-font-heading);
+}
+
+h2 {
+  font-size: 42px;
+  line-height: 49px;
+  letter-spacing: 0.05em;
+}
+
+.button {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+/* Class */
+/* HEADER */
 .global-header {
-  background-color: black;
+  background-color: #363636;
+}
+
+.global-header a {
+  color: var(--link-color);
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 600;
 }
 
 .global-header .main-navigation a,
 .global-header .main-navigation a:visited {
-  color: var(--link-color);
+  letter-spacing: 0.1em;
 }
 
-.global-header .main-navigation a.active {
-  color: #ff6c00;
+.global-header a.active {
+  color: var(--link-active-color);
+}
+
+.global-header a.social-link {
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 0.2em;
+}
+
+.global-header .main-navigation .phone-number {
+  text-transform: uppercase;
+}
+
+/* HERO */
+.section-sub-heading {
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.hero-heading {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 85px;
+  letter-spacing: 0.05em;
+  color: var(--heading-color);
+}
+
+.section {
+  background-color: #363636;
+  color: var(--text-color);
+  letter-spacing: 0.02em;
+}
+
+.section h3 {
+  color: var(--text-color);
+}
+
+.section h1,
+.section h2 {
+  color: var(--heading-color);
+}
+
+.section-with-light-bg {
+  background-color: #fff;
+  color: #555555;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+} /* PARTE DIN  ABOUT */
+
+.section-with-light-bg h1,
+.section-with-light-bg h2,
+.section-with-light-bg h3 {
+  color: var(--heading-alternate-color);
+}
+
+.hero-section {
+  background-color: #363636;
+}
+
+.section-heading {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 85px;
+  letter-spacing: 0.05em;
+  color: var(--heading-color);
+}
+
+/* ABOUT */
+.small-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  letter-spacing: 0.02em;
+}
+
+/*  SERVICES AND PRICES */
+.services-list {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  color: var(--text-color);
+}
+
+/*  OLD SCHOOL */
+
+/*  OUR BARBERS */
+.section-with-gray-bg {
+  background: #f7f7f7;
+}
+
+.barbers-list li {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+.barbers-list li em {
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--text-active);
+}
+
+/*  MOTTO */
+
+/*  CONTACTS */
+.section address {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  color: var(--text-color);
+}
+
+.section address a {
+  color: var(--text-color);
+}
+
+.no-underline {
+  text-decoration: none;
+}
+
+.section address a:hover,
+.section address a:focus {
+  color: #fff;
 }
