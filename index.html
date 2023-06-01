@@ -7,6 +7,8 @@
     <title>Barbershop</title>
     <link rel="icon" type="image/x-icon" href="./styles/images/goit.png" />
     <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   </head>
   <!-- BODY -->
   <body>
@@ -15,47 +17,42 @@
       <a href="./index.html"
         ><img src="./styles/images/logo.svg" alt="logo" />
       </a>
-      <nav>
+      <nav class="main-navigation">
         <ul>
-          <li><a href="./about.html">About</a></li>
+          <li><a href="./about.html" class="active">About</a></li>
           <li><a href="./services.html">Services and Prices</a></li>
           <li><a href="./barbers.html">Barbers</a></li>
           <li><a href="./contacts.html">Contacts</a></li>
         </ul>
       </nav>
-      <ul>
-        <li><a href="tel:+380441111111">+38 044 111 11 11</a></li>
-        <li><button>BOOK A SERVICES</button></li>
-      </ul>
-      <section>
-        <ul>
-          <li>
-            <a
-              href="https://www.youtube.com/"
-              target="_blank"
-              rel="nofollow noopener noreferrer"
-              >Youtube</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://www.instagram.com/"
-              target="_blank"
-              rel="nofollow noopener noreferrer"
-              >Instagram</a
-            >
-          </li>
-        </ul>
+      <button class="button">BOOK A SERVICES</button>
+      <aside>
+        <a
+          class="social-link"
+          href="https://www.youtube.com/"
+          target="_blank"
+          rel="nofollow noopener noreferrer"
+          >Youtube</a
+        >
+        <a
+          class="social-link active"
+          href="https://www.instagram.com/"
+          target="_blank"
+          rel="nofollow noopener noreferrer"
+          >Instagram</a
+        >
+
         <img src="./styles/images/heder_section-divider.png" alt="divider" />
-      </section>
+      </aside>
+      <a class="phone-number" href="tel:+380441111111">+38 044 111 11 11</a>
     </header>
     <!-- MAIN -->
     <main>
       <!-- HERO -->
-      <section>
+      <section class="section hero-section">
         <img src="./styles/images/landing-desh.png" alt="landing-desh" />
-        <h3>A hair salon for men in Kyiv</h3>
-        <h1>BarberShop</h1>
+        <h3 class="section-sub-heading">A hair salon for men in Kyiv</h3>
+        <h1 class="hero-heading" title="BarberShop">BarberShop</h1>
         <p>
           We are experts in trendy men's haircuts. <br />
           We work quickly, carefully, and tastefully.
@@ -63,33 +60,35 @@
         <button>Prev</button>
         <button>Next</button>
       </section>
-      <!--  -->
-      <section>
-        <ul>
-          <li><img src="./styles/images/img1.jpg" alt="Frizer la munca" /></li>
-          <li><img src="./styles/images/img2.jpg" alt="Frizer tunde" /></li>
-        </ul>
+
+      <!-- ABOUT -->
+      <section class="section section-with-light-bg">
+        <img src="./styles/images/img1.jpg" alt="Frizer la munca" />
+        <img src="./styles/images/img2.jpg" alt="Frizer tunde" />
         <img src="./styles/images/landing-desh.png" alt="" />
-        <h3>About</h3>
-        <h2>The Best Barbershop in Your City</h2>
+        <h3 class="section-sub-heading">About</h3>
+        <h2 class="section-heading">The Best Barbershop in Your City</h2>
         <p>
           If you want to add more confidence to your image, you are definitely
           in the right place.
         </p>
-        <p>
+        <p class="small-text">
           We are a team that never rests on its laurels and yearns for change.
           And once you fall into the hands of our master, you will never be the
           same again. We are a team that is always on the same wavelength with
           clients. Therefore, we are always ready to improve everyone who comes
           to us!
         </p>
-        <button>BOOK A SERVICES</button>
+        <button class="button">BOOK A SERVICES</button>
       </section>
-      <!-- Spend time in the company of the best craftsmen -->
-      <section class="services">
-        <h3>Spend time in the company of the best craftsmen</h3>
+
+      <!-- SERVICES AND PRICES -->
+      <section class="section">
+        <h3 class="section-sub-heading">
+          Spend time in the company of the best craftsmen
+        </h3>
         <h2>Services and Prices</h2>
-        <ul>
+        <ul class="services-list">
           <li><span>Men's Haircut</span> <span>from 300 UAH </span></li>
           <li><span>Beard Trim</span> <span>from 200 UAH </span></li>
           <li><span>Mustache Trim</span> <span>from 200 UAH </span></li>
@@ -103,10 +102,11 @@
           </li>
           <li><span>Gray Coverage</span> <span>from 200 UAH</span></li>
         </ul>
-        <button>BOOK A SERVICES</button>
+        <button class="button">BOOK A SERVICES</button>
       </section>
-      <!-- Old school -->
-      <section class="school">
+
+      <!-- OLD SCHOOL -->
+      <section class="section section-with-light-bg">
         <article>
           <ul>
             <li>
@@ -119,7 +119,7 @@
             </li>
             <li>
               <span>20</span><sup>+</sup>
-              <span>The Best Barbers of Kyiv</span>
+              <span>The Best Barbersof Kyiv</span>
             </li>
             <li>
               <span>100</span><sup>+</sup>
@@ -128,42 +128,46 @@
           </ul>
         </article>
 
-        <h3>Old school</h3>
+        <h3 class="section-sub-heading">Old school</h3>
         <h2>Why do they come to us?</h2>
         <p>
           Only good things are said about us. But it is better &#8232;to see and
           feel 1 time than to read 10 times.
         </p>
       </section>
-      <!-- Our Barbers  -->
-      <section>
-        <h3>for true connoisseurs of the atmosphere</h3>
+
+      <!-- OUR BARBERS -->
+      <section class="section section-with-light-bg section-with-gray-bg">
+        <h3 class="section-sub-heading">
+          for true connoisseurs of the atmosphere
+        </h3>
         <h2>Our Barbers</h2>
-        <ul>
+        <ul class="barbers-list">
           <li>
             <img src="./styles/images/john-smith.jpg" alt="John Smith" />
-            <br />John Smith <br />
+            <br /><span>John Smith</span> <br />
             <em>Extreme Barber</em>
           </li>
           <li>
             <img
               src="./styles/images/michele-doe.jpg"
               alt="Michele Doe"
-            /><br />Michele Doe <br />
+            /><br /><span>Michele Doe</span> <br />
             <em>Extreme Barber</em>
           </li>
           <li>
             <img
               src="./styles/images/alan-black.jpg"
               alt="Alan Black"
-            /><br />Alan Black <br />
+            /><br /><span>Alan Black </span> <br />
             <em>Extreme Barber</em>
           </li>
         </ul>
       </section>
-      <!-- Motto -->
-      <section>
-        <img src="./styles/images/landing-desh.png" alt="divaider" />
+
+      <!-- MOTTO -->
+      <section class="section section-with-light-bg">
+        <h3 class="section-sub-heading">In Latin, "barba" means "beard"</h3>
         <ul>
           <li><img src="./styles/images/motto1.jpg" alt="frizer tunde" /></li>
           <li><img src="./styles/images/motto2.jpg" alt="frizer rade" /></li>
@@ -171,17 +175,18 @@
           <li><img src="./styles/images/motto4.jpg" alt="frizer rade" /></li>
         </ul>
       </section>
-      <!-- Contacts -->
-      <section>
+
+      <!-- CONTACTS -->
+      <section class="section">
+        <h2>Contacts</h2>
         <address>
           <span>
             <img src="./styles/images/map-pin.svg" alt="map pin" />
-            Main Street, 7A <br />
-            Kyiv, 08132</span
+            Main Street, 7A Kyiv, 08132</span
           >
           <br />
           <span>
-            <a href="tel:+380441111111"
+            <a class="no-underline" href="tel:+380441111111"
               ><img src="./styles/images/phone.svg" alt="telefon" />+38 044 111
               11 11</a
             >
@@ -198,7 +203,7 @@
           >
         </address>
         <div>
-          <h3>working hours</h3>
+          <h3 class="section-sub-heading">working hours</h3>
           <p>
             Daily from <time datetime="9:00 AM">9:00 AM</time> till
             <time datetime="22:00 PM">22:00 PM</time>
@@ -206,7 +211,8 @@
         </div>
       </section>
     </main>
-    <!-- Footer -->
+
+    <!-- FOOTER -->
     <footer>
       <span>&#169;Copyright 2022</span>
       <img src="./styles/images/landing-desh.png" alt="" />
